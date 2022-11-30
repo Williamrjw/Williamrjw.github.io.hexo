@@ -1,0 +1,29 @@
+<style>
+    progress{
+    -webkit-appearance:initial;
+    }
+    ::-webkit-progress-bar{
+        /* 获取progress */
+        background-color: aqua;
+        /* 进度条未被填充的背景颜色 */
+    }
+
+    ::-webkit-progress-inner-element {
+        border: 2px solid black;
+        border-radius: 15px;
+        /* 进度条的内边框，注意跟outline区分 */
+    }
+</style>
+<div id="panel">
+    <h4>BMI计算器</h4>                
+</div>
+<script src="../js/lib/jquery-3.3.1.js"></script>
+<script src="../js/BMI.js"></script>
+身高（cm）:<input type="number" id="height"/>
+体重（kg）:<input type="number" id="weight" />
+<input type="button" value="计算BMI指数" onclick="calculateBMI()">
+<div id="bmi_show">
+    <p id="bmi_value">您的BMI:  </p>
+    <div id="bmi_full" style="background-color:seashell;width: 100%;height: 20px;"><div id="bmi_graph" style=" height: 20px;"></div></div>
+</div> 
+

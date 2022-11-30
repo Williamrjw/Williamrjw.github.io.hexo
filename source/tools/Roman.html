@@ -1,0 +1,18 @@
+<div id="panel">
+    <h4>罗马数字转换</h4>                
+</div>
+<script src="../js/lib/jquery-3.3.1.js"></script>
+<script src="../js/roman_num.js"></script>
+<script>
+    function do1(){
+        $("#luoma").val(int2roman($("#alabo").val()))
+    }
+    function do2(){
+        $("#alabo").val(roman2int($("#luoma").val()))
+    }
+</script>
+阿拉伯数字:<input type="number" id="alabo"/>
+<input type="button" value="转罗马数字" onclick="do1()">
+<br>
+罗马数字:<input type="text" id="luoma" />
+<input type="button" value="转阿拉伯数字" onclick="do2()">
